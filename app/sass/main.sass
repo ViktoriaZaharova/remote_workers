@@ -1,0 +1,1190 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+//*::-webkit-input-placeholder
+//	color: #666
+//	opacity: 1
+//
+//*:-moz-placeholder
+//	color: #666
+//	opacity: 1
+//
+//*::-moz-placeholder
+//	color: #666
+//	opacity: 1
+//
+//*:-ms-input-placeholder
+//	color: #666
+//	opacity: 1
+
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//	color: #666
+//body input:required:valid,
+//body textarea:required:valid
+//	color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 17px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #ffffff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+//links
+a
+  display: block
+  transition: .3s ease-out
+  text-decoration: none
+
+.phone
+  color: $accent
+  font:
+    weight: 500
+  line-height: 20.83px
+
+//input
+input
+  outline: none
+  transition: .3s ease-out
+  border: 1px solid $border
+    radius: 3px
+  padding: 0 15px
+  box-sizing: border-box
+  font:
+    family: $default-font
+    size: 15px
+  line-height: 29.17px
+  letter-spacing: 0.29px
+  color: #ffffff
+  background: transparent
+  width: 100%
+  height: 42px
+
+  &::placeholder
+    color: #ffffff
+
+label
+  display: block
+
+//button
+button
+  transition: .3s ease
+  outline: none
+  background: transparent
+  box-sizing: border-box
+  cursor: pointer
+
+.btn
+  border: 1px solid $accent
+    radius: 3px
+  color: $accent
+  line-height: 20.83px
+  padding: 9px 14px
+
+  &:hover
+    border-color: $check
+    color: #ffffff
+    background: $check
+
+.btn-accent
+  background-color: $accent
+  border: none
+  color: #ffffff
+  text-transform: uppercase
+  padding: 11px 25px
+  border-radius: 3px
+  font:
+    size: 17px
+    weight: 600
+
+  &:hover
+    background: $check
+
+.btn-white
+  margin: 30px auto 0
+  text-transform: uppercase
+  display: block
+  color: #0c0c0c
+  font:
+    weight: 500
+    size: 25px
+  background: #ffffff
+  padding: 14px 52px
+
+  &:hover
+    background: $text2
+    color: #fff
+
+//tag
+h1
+  text-shadow: 0 1px 7px rgba(7, 7, 7, 0.15)
+  font:
+    weight: 800
+    size: 75px
+  letter-spacing: 1.5px
+  color: #ffffff
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  width: 100%
+  margin: 140px 0 53px 0
+
+  span
+    text-shadow: 0 1px 7px rgba(7, 7, 7, 0.15)
+    color: $accent
+    font:
+      weight: 600
+      size: 17px
+    letter-spacing: 1.67px
+    text-transform: uppercase
+    margin: 7px 0
+
+  .title-description
+    font-size: 25px
+    letter-spacing: 2.5px
+
+h2
+  color: $accent
+  line-height: 59.99px
+  font:
+    size: 35px
+    weight: 800
+  margin: 0 0 20px 0
+  text-align: center
+
+
+h4
+  font:
+    weight: 800
+    size: 19px
+  line-height: 29.17px
+  color: #ffffff
+  text-transform: uppercase
+  margin: 0 0 23px 0
+
+
+.text-special
+  color: $accent
+
+//form
+.form
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+  label
+    width: 377px
+    margin: 0 45px 0 0
+
+
+.container
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  width: 1200px
+  padding: 0 15px
+  box-sizing: border-box
+  margin: 0 auto
+
+header
+  display: flex
+  flex-direction: column
+
+.header__top
+  .container
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 7px 15px 10px
+    width: 1100px
+
+.header__top-text
+  color: $text
+  font-size: 13px
+  line-height: 20.83px
+  text-align: center
+  max-width: 330px
+
+.header__bottom
+  background-color: $accent
+
+  .container
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+
+.menu
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+  li
+    a
+      padding: 17px 20px
+      color: #ffffff
+      font:
+        size: 17px
+        weight: 500
+      line-height: 20.83px
+
+      &:hover
+        background: $border
+        color: #000
+
+.main
+  position: relative
+  background: url("../img/bg1.png") no-repeat center
+    size: cover
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#0e0e0e, .78)
+
+  .container
+    z-index: 2
+    flex-direction: column
+    align-items: center
+
+    .form
+      margin: 0 0 146px 0
+
+.advantages
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+  border: 1px solid #e0e7ee
+  background-color: #ffffff
+  padding: 29px 20px 21px
+  margin: 0 0 -96px 0
+  z-index: 2
+
+  .item
+    margin: 0 20px
+    width: 170px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    p
+      text-transform: uppercase
+      color: $accent
+      font:
+        size: 15px
+        weight: 500
+      text-align: center
+      letter-spacing: 0.73px
+      margin: 30px 0 0 0
+
+.services
+  margin: 150px 0 0 0
+  .container
+    flex-direction: column
+    align-items: center
+    .btn-all
+      display: block
+      margin: 0 auto 47px
+      font-size: 16px
+      padding: 11px 55px
+
+.services__content
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+  .item
+    margin: 0 0 50px 0
+    width: 270px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &:nth-child(n+5)
+      display: none
+    .image
+      height: 232px
+      overflow: hidden
+      margin: 0 0 24px 0
+
+    h3
+      text-align: center
+      color: $text2
+      font:
+        size: 16px
+        weight: 600
+    p
+      text-align: center
+
+
+.portfolio
+  margin: 70px 0 30px 0
+
+  .container
+    flex-direction: column
+
+    h2
+      color: #0c0c0c
+
+.portfolio__content
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+
+  .portfolio__content-item
+    width: 270px
+    margin: 0 0 33px 0
+
+.principles__works
+  position: relative
+  background: url("../img/bg3.png") no-repeat center
+    size: cover
+  padding: 44px 0
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#0c0c0c, .66)
+
+  .container
+    flex-direction: column
+
+    h2
+      color: #ffffff
+
+.principles__works-content
+  max-width: 1040px
+  width: 100%
+  margin: 40px auto 0
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: flex-start
+
+.principles__works-item
+  width: 48%
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: flex-start
+  margin: 0 0 50px 0
+
+  .icon
+    min-width: 71px
+    width: 71px
+    margin: 0 28px 0 0
+
+  .text
+    display: flex
+    flex-direction: column
+    color: #ffffff
+
+    h4
+      color: #ffffff
+      font:
+        size: 18px
+        weight: 600
+      line-height: 26px
+      text-transform: uppercase
+      margin: 0 0 10px 0
+
+    p
+      font-size: 12px
+
+.sale-advantages
+  margin: 98px 0 59px
+
+  .container
+    flex-direction: column
+
+
+.sale-advantages-top
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+
+.sale-advantages__image
+  width: 456px
+
+.sale-advantages__text
+  width: 620px
+  margin: 0 0 0 13px
+
+  h3
+    color: $accent
+    font:
+      size: 21px
+      weight: 800
+
+.list-check
+  display: flex
+  flex-direction: column
+  margin: 65px 0 0 0
+
+  li
+    position: relative
+    margin: 0 0 40px 0
+    padding: 0 0 0 50px
+    font-size: 19px
+    color: #161616
+
+    &:last-child
+      margin: 0
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0, -50%)
+      background: url("../img/check-mark.png") no-repeat center
+      width: 35px
+      height: 35px
+
+
+.sale-advantages-callback
+  border: 1px solid #e0e7ee
+  background-color: #ffffff
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 22px 30px 30px 30px
+
+  h3
+    color: $accent
+    font:
+      weight: 800
+      size: 27px
+    text-align: center
+    margin: 0 0 23px 0
+    letter-spacing: 1.08px
+    line-height: 29.17px
+
+  .form
+    label
+      margin: 0 30px 0 0
+
+    input
+      color: #90a4ae
+      font-size: 15px
+
+      &::placeholder
+        color: #90a4ae
+
+.section-advantages
+  position: relative
+  background: url("../img/bg4.png") no-repeat center
+    size: cover
+  padding: 62px 0 150px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#0c0c0c, .75)
+
+  .container
+    flex-direction: column
+
+    h2
+      line-height: 59.99px
+      color: #ffffff
+      max-width: 900px
+      margin: 0 auto
+
+.advantages__content
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  width: 100%
+  margin: 45px auto 0
+
+.advantages__content-item
+  width: 230px
+  display: flex
+  flex-direction: column
+  align-items: center
+  color: #ffffff
+  margin: 0 80px 25px
+
+  h3
+    text-align: center
+    margin: 30px 0 0 0
+    min-height: 65px
+    font:
+      weight: 600
+      size: 19px
+
+  p
+    text-align: center
+    font-size: 15px
+
+.section-sale
+  background: url("../img/bg6.png") no-repeat center $accent
+    size: cover
+  padding: 53px 0 44px
+
+  .container
+    flex-direction: column
+    align-items: center
+
+    h2
+      font-size: 63px
+      color: #fff
+      margin: 0 0 20px 0
+
+    p
+      text-align: center
+      color: #ffffff
+      font:
+        weight: 500
+        size: 25px
+
+.stages-work
+  padding: 34px 0 27px
+
+  .container
+    flex-direction: column
+
+    h2
+      color: #0c0c0c
+
+.stages-work__content
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  width: 100%
+  max-width: 930px
+
+.stages-work__content-item
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin: 0 0 16px 0
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    bottom: -42px
+    left: 58px
+    background: url("../img/arrow.png") no-repeat center
+    width: 42px
+    height: 38px
+  .icon
+    position: absolute
+    bottom: 0
+    left: 60px
+
+  &:last-child
+    margin: 0
+    &:before
+      display: none
+  &:nth-child(even)
+    margin: 0 0 16px 100px
+    &:before
+      transform: rotate(90deg)
+      left: -42px
+      bottom: -11px
+  .number
+    min-width: 98px
+    width: 98px
+    height: 98px
+    color: #ffffff
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    box-sizing: border-box
+    background: #c66230
+    font:
+      weight: 500
+      size: 47px
+    margin: 0 20px 0 0
+    p
+      z-index: 2
+      color: #fff
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 50%
+      transform: translate(0, -50%)
+      margin: 0 auto
+      width: 85px
+      height: 85px
+      border-radius: 50%
+      background: #e23d0b
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      width: 65px
+      height: 65px
+      border-radius: 50%
+      background: #ff2d00
+      top: 50%
+      transform: translate(0, -50%)
+  p
+    color: #191919
+
+.specialist
+  background-color: #f9f9f9
+  padding: 40px 0
+  box-sizing: border-box
+
+  .container
+    flex-direction: column
+    align-items: center
+
+    h2
+      color: #0c0c0c
+
+
+.specialist__slider
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+	align-items: flex-start	
+	margin: 50px 0 0 0
+	width: 100%
+
+.slide
+  outline: none
+
+
+.specialist__slider-item
+  width: 172px
+  margin: 0 auto 20px
+
+  .image
+    height: 279px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 18px 0
+
+  .name
+    text-align: center
+    color: $text2
+    font-size: 11px
+
+  p
+    text-align: center
+    color: $text2
+    font:
+      weight: 300
+      size: 11px
+
+.slick-dots
+  bottom: -38px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+  li.slick-active
+    button
+      width: 13px
+      height: 13px
+      background: $accent
+
+  li
+    margin: 0 4px
+    width: 13px
+    height: 13px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    button
+      box-sizing: border-box
+      padding: 0
+      width: 9px
+      height: 9px
+      border: 1px solid $accent
+        radius: 50%
+      background: transparent
+
+      &:before
+        display: none
+
+.s-callback
+  background-color: $accent
+  padding: 63px 0 77px
+
+  .container
+    flex-direction: column
+    align-items: center
+
+    h3
+      letter-spacing: 0.75px
+      color: #ffffff
+      font:
+        weight: 600
+        size: 19px
+
+      strong
+        font-weight: 800
+
+    .form
+      margin: 36px 0 0 0
+
+      label
+        margin: 0 30px 0 0
+
+      .btn-accent
+        background: #ffffff
+        color: #0c0c0c
+
+        &:hover
+          background: $check
+          color: #ffffff
+
+.reviews
+  padding: 74px 0
+
+  .container
+    flex-direction: column
+
+    h2
+      color: #0c0c0c
+
+.reviews__slider
+  margin: 34px 0 0 0
+
+  .slick-dots
+    bottom: -68px
+
+.reviews__slider-item
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .text
+    text-align: center
+    color: $text2
+    line-height: 28px
+    font-size: 15px
+    margin: 0 0 30px 0
+
+  .name
+    text-align: center
+    position: relative
+    padding: 12px 0 0 0
+    color: $text2
+    font:
+      size: 16px
+      weight: 600
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      top: 0
+      width: 30px
+      height: 1px
+      background: $accent
+
+  .photo
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+    margin: 48px 0 0 0
+
+    .image
+      width: 170px
+      height: 118px
+      overflow: hidden
+      display: flex
+      align-items: center
+      justify-content: center
+
+
+[data-fancybox="images"]
+  outline: none
+
+.contacts
+  position: relative
+
+  .container
+    height: 100%
+    position: absolute
+    left: 0
+    right: 0
+    margin: 0 auto
+    top: 0
+    z-index: 2
+    justify-content: flex-end
+
+    .contacts__content
+      width: 650px
+      background-color: rgba(#ffffff, .87)
+      box-sizing: border-box
+      padding: 49px 100px
+      display: flex
+      flex-direction: column
+
+      h2
+        font-weight: 600
+
+      h3
+        color: $accent
+        font:
+          size: 18px
+          weight: 600
+
+      p, a
+        color: $accent
+        font:
+          weight: 300
+          size: 16px
+
+      .line
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        margin: 20px 0 30px 0
+
+      .social
+        margin: 0 auto
+        width: 29px
+        height: 29px
+        display: flex
+        align-items: center
+        justify-content: center
+
+
+#map
+  height: 342px
+  width: 100%
+
+.info
+  padding: 30px 0
+
+  .container
+    align-items: center
+    justify-content: center
+
+    p
+      color: $accent
+      font:
+        weight: 300
+        size: 21px
+
+
+.calculate
+  position: relative
+  background: url("../img/bg2.png") no-repeat center
+    size: cover
+  padding: 38px 0 0
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(#484848, .77)
+
+  .container
+    flex-direction: column
+    align-items: center
+
+    h2
+      color: #fff
+
+.calculate__stages
+  display: flex
+  flex-direction: column
+  align-items: center
+  color: #fff
+  margin: 0 auto 28px
+  max-width: 310px
+
+  .number
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 68px
+    height: 68px
+    border: 3px solid #ffffff
+      radius: 50%
+    margin: 0 0 18px
+    box-sizing: border-box
+    font:
+      weight: 300
+      size: 33px
+
+  p
+    font-size: 20px
+    text-align: center
+
+.form-calculate
+  width: 100%
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 0
+    background: url("../img/men.png") no-repeat center
+    width: 376px
+    height: 648px
+
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    background: url("../img/mobile.png") no-repeat center
+    width: 301px
+    height: 603px
+
+  label
+    width: 370px
+    margin: 0 auto 35px
+
+    input
+      border: none
+        bottom: 1px solid #ffffff
+        radius: 0
+      font-size: 40px
+      text-align: center
+      padding: 0 0 10px
+      height: auto
+      color: #ffffff
+
+      &::placeholder
+        color: #ffffff
+
+  button
+    margin: 0 auto 58px
+    box-shadow: 0 0 18px $accent
+    padding: 19px 45px
+    font:
+      weight: 800
+      size: 42px
+    display: block
+
+.calculate-checkbox
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: flex-start
+
+
+
+.checkbox
+  margin: 0 0 30px
+  width: 370px
+  height: 348px
+  display: flex
+  flex-direction: column
+  align-items: center
+  border: 1px solid #fafafa
+    radius: 10px
+  background-color: #ffffff
+  box-sizing: border-box
+  padding: 0 0 34px 0
+  .image
+    height: 206px
+    min-height: 206px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border-radius: 10px
+    img
+      width: 100%
+      border-radius: 10px
+  .checkbox-inp
+    display: none
+
+  .checkbox-custom
+    margin: auto 0 0 0
+    position: relative
+    width: 200px
+    height: 36px
+    min-height: 36px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #A0A0A0
+      radius: 3px
+    background: #ffffff
+    cursor: pointer
+    color: $check
+    font-size: 13px
+    letter-spacing: 0.94px
+    transition: .3s ease
+    &::before
+      content: "ВЫБРАТЬ"
+      text-align: center
+    &::after
+      content: ''
+      position: absolute
+      right: 40px
+      background: url("../img/tick.png") no-repeat center
+      width: 16px
+      height: 12px
+      top: 50%
+      transform: translate(0, -50%)
+  .label
+    margin: auto 0 0 0
+    text-transform: uppercase
+    letter-spacing: 1.25px
+    color: $checkbox
+    font:
+      size: 17px
+      weight: 600
+    text-align: center
+    padding: 0 20px
+    line-height: 26px
+  .checkbox-inp:checked + .checkbox-custom
+    background: $accent
+    border-color: $accent
+    color: #ffffff
+    &::before
+      content: "ВЫБРАНО"
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      right: 0
+      left: 0
+      margin: 0 auto
+      width: 100%
+      height: 100%
+    &::after
+      content: ''
+      position: absolute
+      right: 40px
+      top: 50%
+      transform: translate(0, -50%)
+      width: 16px
+      height: 12px
+      background: url("../img/tick_(7).png") no-repeat center
+
+.gm-style .place-card, .gm-style .default-card, .gm-style .directions-card
+	display: none !important
+
+.top
+	position: fixed
+	bottom: 20px
+	left: 20px
+	background: $accent
+	width: 50px
+	height: 50px
+	border: 2px solid #ffffff
+	border-radius: 50%
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	z-index: 2
+	transition: .3s ease
+	color: #fff
+	.fa
+		color: #ffffff
+		font-size: 24px	
+	&:hover
+		background: $text
+  
+
+@import "media"
+// Всегда в конце
